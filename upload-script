@@ -135,7 +135,7 @@ for file in $INPUT_ARGS; do
 
     # Upload the artifact - capturing HTTP response-code in our output file.
     response=$(curl \
-        -sSL \
+        -vsSL \
         -XPOST \
         -H "${AUTH_HEADER}" \
         --upload-file "${file}" \
